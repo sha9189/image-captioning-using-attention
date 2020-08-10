@@ -1,0 +1,42 @@
+*.pyc
+__pycache__
+temp.json
+
+# Exclude Dataset
+dataset/flickr30k/*
+!dataset/flickr30k/README.md
+!dataset/flickr30k/image_features
+dataset/flickr30k/image_features/*
+!dataset/flickr30k/image_features/README.md
+
+dataset/flickr8k/*
+!dataset/flickr8k/README.md
+!dataset/flickr8k/image_features
+dataset/flickr8k/image_features/*
+!dataset/flickr8k/image_features/README.md
+
+dataset/MSCOCO/*
+!dataset/MSCOCO/README.md
+!dataset/MSCOCO/image_features
+dataset/MSCOCO/image_features/*
+!dataset/MSCOCO/image_features/README.md
+
+dataset/glove/*
+!dataset/glove/README.md
+
+# Exclude playground notebook
+playground.ipynb
+
+# Exclude vs code settings
+.vscode
+
+# virtual env
+venv
+
+# personal files
+text\ files
+not\ used
+
+# all checkpoints
+checkpoints/train/*
+!checkpoints/train/README.md

@@ -1,0 +1,1 @@
+This folder contains saved image_features extracted by passing images through InceptionV3 network. This reduces the actual model training time as the images features can directly be loaded from here rather than extracting them everytime by passing through the InceptionV3 network. Run the notebook "02-extract-photo-features.ipynb" to automatically populate this folder.
