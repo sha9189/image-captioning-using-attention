@@ -45,7 +45,7 @@ def load_flickr30k():
         val_captions
     """
     # Read the file containing all caption-image pairs
-    with open('Dataset/Flickr30k/Flickr30k.token.txt', 'r') as file:
+    with open('dataset/flickr30k/Flickr30k.token.txt', 'r') as file:
         annotations = file.read()
 
     # to load the predefined list of image identfiers for training and validation set
@@ -66,17 +66,17 @@ def load_flickr30k():
         return set(dataset)
 
     # load the train set identifiers
-    train_set = load_set('Dataset/Flickr30k/Flickr_30k.trainImages.txt')
+    train_set = load_set('dataset/flickr30k/Flickr_30k.trainImages.txt')
 
     # load the validation set identifiers
-    val_set = load_set('Dataset/Flickr30k/Flickr_30k.devImages.txt')
+    val_set = load_set('dataset/flickr30k/Flickr_30k.devImages.txt')
 
     print("Number of distinct images in training set:", len(train_set))
     print("Number of distinct images in validation set:", len(val_set))
 
 
     # get path to the image folder
-    PATH = os.path.abspath('.') + '/Dataset/Flickr30k/flickr30k-images/'
+    PATH = os.path.abspath('.') + '/dataset/flickr30k/flickr30k-images/'
 
     # Store captions and image names in vectors
     train_captions = []
