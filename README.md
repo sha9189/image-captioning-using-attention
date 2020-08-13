@@ -35,7 +35,7 @@ The best evaluation scores achieved so far are:
 
 Model prediction on a few images is as follows:
 
-![prediction_plot](./images/collage5.jpg)
+![prediction_plot](./images/collage.jpg)
 
 *To see model prediction on more images, click on "[05-model-prediction.ipynb](./05-model-prediction.ipynb/)".*
 
