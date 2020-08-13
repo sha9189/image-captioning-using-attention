@@ -9,8 +9,8 @@ from PIL import Image
 import matplotlib.pyplot as plt
 
 # enable memory growth to avoid getting error while using InceptionV3 model
-# physical_devices = tf.config.experimental.list_physical_devices('GPU')
-# tf.config.experimental.set_memory_growth(physical_devices[0], enable=True)
+physical_devices = tf.config.experimental.list_physical_devices('GPU')
+tf.config.experimental.set_memory_growth(physical_devices[0], enable=True)
 
 
 ###########################

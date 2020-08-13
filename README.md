@@ -3,22 +3,20 @@
 ### Introduction
 
 The aim of this project is to create an Image Captioning System using Attention Mechanism. The trained model takes an image as input and outputs a sentence description that is both accurate and semantically (or grammatically) apt.  
-Model prediction on a few images is as follows:
 
-![prediction_plot](./images/collage.jpg)
 
-*To see model prediction on more images, head over to the notebook "[05-model-prediction.ipynb](./05-model-prediction.ipynb/)".*
-
-----------
-### Model
 This project is still in progress. The key achievments so far are as follows:
 
 - **Implemented Attention**: Attention mechanism, intuitively, allows the model to perceive images close to the way humans perceive them, by focusing more on certain areas of the image at a time. This in turn helps us to visualize what the model sees for predicting each word as shown below.   
 
 ![attention_plot-2](./images/attention-plot-2807-cropped.jpg) 
 
+<br>
+
 ![attention_plot](./images/attention-plot-4551-cropped.jpg)
-*To see more attention plots and model predictions, head over to the notebook "[05-model-prediction.ipynb](./05-model-prediction.ipynb/)".*
+*To see more attention plots and model predictions, click on "[05-model-prediction.ipynb](./05-model-prediction.ipynb/)".*
+
+<br>
 
 - Implemented **Beam Search Algorithm** for improved caption quality
 
@@ -33,16 +31,15 @@ The best evaluation scores achieved so far are:
     - BLEU-3: 64.8%
     - BLEU-4: 9.03%   
 
-----------
-### Setup
-To run the model against images of your choice, follow the steps below:
-1. Install Python 3 from [here](https://www.python.org/downloads/) (preferrably v3.7.6, but not mandatorily).
-2. Create a virtual environment using [these](https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/#creating-a-virtual-environment) steps.
-3. Activate the virtual environment using [these](https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/#activating-a-virtual-environment) steps. 
-4. Download this repository and navigate to the downloaded woking directory in your terminal.
-3. Install the Python requirements with `pip install -r requirements.txt`.
-4. Run Jupyter notebook using command `jupyter notebook`.
-4. Open the notebook "[05-model-prediction.ipynb](./05-model-prediction.ipynb/)" and run the cells sequentially. Replace the `image` variable with the path to your image.
+<br>
+
+Model prediction on a few images is as follows:
+
+![prediction_plot](./images/collage5.jpg)
+
+*To see model prediction on more images, click on "[05-model-prediction.ipynb](./05-model-prediction.ipynb/)".*
+
+<br>
 
 For any suggestions, comments or anything else, you can find me at my [Mail](mailto:shailesh.formal@gmail.com?subject=[GitHub]%20Image%20Captioning%20Using%Attention) or [LinkedIn](https://www.linkedin.com/in/shailesh-mahto).
 
