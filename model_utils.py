@@ -4,8 +4,9 @@ import tensorflow as tf
 from sklearn.utils import shuffle
 import os
 
-physical_devices = tf.config.experimental.list_physical_devices('GPU')
-tf.config.experimental.set_memory_growth(physical_devices[0], enable=True)
+## enable memory growth to use GPU
+# physical_devices = tf.config.experimental.list_physical_devices('GPU')
+# tf.config.experimental.set_memory_growth(physical_devices[0], enable=True)
 
 
 # to load and preprocess the image input for InceptionV3 pretrained model

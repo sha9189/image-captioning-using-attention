@@ -2,48 +2,60 @@
 
 ### Introduction
 
-The aim of this project is to create an Image Captioning System using Attention Mechanism. The trained model takes an image as input and outputs a sentence description that is both accurate and semantically (or grammatically) apt.
+The aim of this project is to create an Image Captioning System using Attention Mechanism. The trained model takes an image as input and outputs a sentence description that is both accurate and semantically (or grammatically) apt.  
+Model prediction on a few images is as follows:
 
-*For a demonstration of model's performance, head over to the notebook "05-model-prediction.ipynb" which has a number of worked out examples.*
+![prediction_plot](./images/collage.jpg)
 
-This project is still in progress. The key achievments so far are as follows:
-
-1. Implemented Attention
-
-2. Used BLEU Score for evaluating model performance
-
-3. Implemented Beam Search Algorithm for improved caption quality
-
-4. Used pretraining GloVe word vector and reduced training time by 50%
-
-5. Trained on a dataset of 150k image-caption pairs using Flickr30k dataset
+*To see model prediction on more images, head over to the notebook "[05-model-prediction.ipynb](./05-model-prediction.ipynb/)".*
 
 ----------
-### Model Performance
+### Model
+This project is still in progress. The key achievments so far are as follows:
 
-Attention mechanism, intuitively, allows the model to perceive images close to the way humans perceive them, by focusing more on certain areas of the image at a time. This in turn helps us to visualize what the model sees for predicting each word. Here is an example of an attention plot.   
+- **Implemented Attention**: Attention mechanism, intuitively, allows the model to perceive images close to the way humans perceive them, by focusing more on certain areas of the image at a time. This in turn helps us to visualize what the model sees for predicting each word as shown below.   
 
-![attention_plot](./images/attention-plot-2807-b.jpg)   
+![attention_plot-2](./images/attention-plot-2807-cropped.jpg) 
 
-*To see more attention plots and predicted captions, head over to the notebook "05-model-prediction.ipynb".*
+![attention_plot](./images/attention-plot-4551-cropped.jpg)
+*To see more attention plots and model predictions, head over to the notebook "[05-model-prediction.ipynb](./05-model-prediction.ipynb/)".*
 
-The best evaluation scores achieved so far are :   
-- BLEU-1: 86.87% 
-- BLEU-2: 77.00%
-- BLEU-3: 64.8%
-- BLEU-4: 9.03%
+- Implemented **Beam Search Algorithm** for improved caption quality
 
-There is still a lot of scope for improvement in the model.
+- Used pretraining **GloVe word vector** reducing the number of trainable parameters by 2.4M and training time by 50%
+
+- Trained on a dataset of **150k image-caption pairs** using Flickr30k dataset
+
+- Used **BLEU Score** for evaluating model performance:  
+The best evaluation scores achieved so far are:
+    - BLEU-1: 86.87% 
+    - BLEU-2: 77.00%
+    - BLEU-3: 64.8%
+    - BLEU-4: 9.03%   
 
 ----------
 ### Setup
 To run the model against images of your choice, follow the steps below:
-1. Install Python 3 using Anaconda or any other method.
-2. Follow the steps on [this](https://www.tensorflow.org/install/gpu#linux_setup) page to install the prerequisites for TensorFlow.
-3. Install the Python requirements with `pip install -r requirements.txt`
-4. Open the notebook "05-model-prediction.ipynb" and run the cells sequentially. Replace the `image` variable with the path to your image
+1. Install Python 3 from [here](https://www.python.org/downloads/) (preferrably v3.7.6, but not mandatorily).
+2. Create a virtual environment using [these](https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/#creating-a-virtual-environment) steps.
+3. Activate the virtual environment using [these](https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/#activating-a-virtual-environment) steps. 
+4. Download this repository and navigate to the downloaded woking directory in your terminal.
+3. Install the Python requirements with `pip install -r requirements.txt`.
+4. Run Jupyter notebook using command `jupyter notebook`.
+4. Open the notebook "[05-model-prediction.ipynb](./05-model-prediction.ipynb/)" and run the cells sequentially. Replace the `image` variable with the path to your image.
 
-For any suggestions, comments or anything else, you can find me at my [Mail](mailto:shailesh1121998@gmail.com?subject=[GitHub]%20Image%20Captioning%20Using%Attention) or [LinkedIn](https://www.linkedin.com/in/shailesh-mahto).
+For any suggestions, comments or anything else, you can find me at my [Mail](mailto:shailesh.formal@gmail.com?subject=[GitHub]%20Image%20Captioning%20Using%Attention) or [LinkedIn](https://www.linkedin.com/in/shailesh-mahto).
+
+----------
+### TODO
+- [X] Attention Mechanism
+- [X] Beam Search Algorithm
+- [X] BLEU Score
+- [X] Use pretrained word embeddings
+- [ ] Train on MSCOCO dataset with 414k image-caption pairs
+- [ ] Create an API and develop a web app
+- [ ] Deploy the model
+
 
 ----------
 ### References

@@ -9,8 +9,8 @@ from PIL import Image
 import matplotlib.pyplot as plt
 
 # enable memory growth to avoid getting error while using InceptionV3 model
-physical_devices = tf.config.experimental.list_physical_devices('GPU')
-tf.config.experimental.set_memory_growth(physical_devices[0], enable=True)
+# physical_devices = tf.config.experimental.list_physical_devices('GPU')
+# tf.config.experimental.set_memory_growth(physical_devices[0], enable=True)
 
 
 ###########################
@@ -354,7 +354,8 @@ imageimage        result: list sequentially representing the predicted caption
         # print("l+1:", l+1)
         ax = fig.add_subplot(len_result//2, 4, l+1)
         # set title of subplot as the word
-        ax.set_title(result[l])
+        ax.set_title(result[l], fontdict= {'color' : 'red',
+                                            'fontsize': 20})
         #display the image in the subplot
         img = ax.imshow(temp_image)
         # overlap attention on image with alpha=0.6
