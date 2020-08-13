@@ -13,7 +13,7 @@ This project is still in progress. The key achievments so far are as follows:
 
 <br>
 
-![attention_plot](./images/attention-plot-4551-cropped.jpg)
+![attention_plot-1](./images/attention-plot-4551-cropped.jpg)
 *To see more attention plots and model predictions, click on "[05-model-prediction.ipynb](./05-model-prediction.ipynb/)".*
 
 <br>
@@ -35,7 +35,7 @@ The best evaluation scores achieved so far are:
 
 Model prediction on a few images is as follows:
 
-![prediction_plot](./images/collage.jpg)
+![prediction](./images/collage1.jpg)
 
 *To see model prediction on more images, click on "[05-model-prediction.ipynb](./05-model-prediction.ipynb/)".*
 
