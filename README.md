@@ -20,7 +20,7 @@ This project is still in progress. The key achievments so far are as follows:
 
 - Implemented **Beam Search Algorithm** for improved caption quality
 
-- Used pretraining **GloVe word vector** reducing the number of trainable parameters by 2.4M and training time by 50%
+- Used pretrained **GloVe word vector** reducing the number of trainable parameters by 2.4M and training time by 50%
 
 - Trained on a dataset of **150k image-caption pairs** using Flickr30k dataset
 
